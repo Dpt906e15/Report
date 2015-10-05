@@ -1,0 +1,63 @@
+\documentclass[11pt, openright, a4paper, notitlepage]{report}
+
+\input{./preamble}
+
+\begin{document}
+
+\selectlanguage{english}
+\maketitle
+\vspace{4cm}
+\begin{center}
+\begin{tabular}{p{2cm} p{5.5cm}}
+\makebox[2cm]{\hrulefill} & \makebox[5cm]{\hrulefill}\\
+$^{\text{Date}}$ & $^{\text{Jais Morten Brohus Christiansen}}$ \\
+\\
+\makebox[2cm]{\hrulefill} & \makebox[5cm]{\hrulefill}\\
+$^{\text{Date}}$ & $^{\text{Henrik Vinther Geertsen}}$ \\
+\\
+\makebox[2cm]{\hrulefill} & \makebox[5cm]{\hrulefill}\\
+$^{\text{Date}}$ & $^{\text{Svetomir Kurtev}}$ \\
+\\
+\makebox[2cm]{\hrulefill} & \makebox[5cm]{\hrulefill}\\
+$^{\text{Date}}$ & $^{\text{Tommy Aagaard Christensen}}$ \\
+\\
+
+\end{tabular}
+\end{center}
+\thispagestyle{empty} \newpage
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\input{./Title}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\pagenumbering{roman}
+\setcounter{page}{0}
+\input{./text/preface}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage \tableofcontents
+\newpage
+\mbox{}
+\newpage
+\onehalfspacing
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\part{Bibliography}
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{ieeetr}
+\bibliography{./text/references}{}
+\newpage
+\mbox{}
+%\newpage
+%\part{Appendices}
+%\appendix
+%\input{./text/appendix}
+
+\end{document}
