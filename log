@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.10.1)  20 OCT 2015 11:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.10.1)  20 OCT 2015 12:04
 entering extended mode
 **report
 (report.tex
@@ -1336,7 +1336,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {C:/Users/jais/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (Title.tex [
 2]
-<./pics/AAU_UK_STUDENTREPORT_blue_rgb.png, id=76, 230.8625pt x 151.56625pt>
+<./pics/AAU_UK_STUDENTREPORT_blue_rgb.png, id=96, 230.8625pt x 151.56625pt>
 File: ./pics/AAU_UK_STUDENTREPORT_blue_rgb.png Graphic file (type png)
 
 <use ./pics/AAU_UK_STUDENTREPORT_blue_rgb.png>
@@ -1408,11 +1408,11 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
  (report.toc
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 4.
-)
-\tf@toc=\write5
  [2
 
-] [3] (text/introduction.tex
+])
+\tf@toc=\write5
+ [3] [4] (text/introduction.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
@@ -1458,30 +1458,48 @@ Chapter 4.
 
 ] [9
 
+] (text/comparison/comparison.tex (text/comparison/preliminaries.tex
+Chapter 5.
+) (text/comparison/criteria.tex [10
+
+]
+Chapter 6.
+) (text/comparison/comparative_analysis.tex [11
+
+]
+Chapter 7.
+) (text/comparison/results.tex [12
+
+]
+Chapter 8.
+)) [13
+
+] [14
+
 ] (report.bbl (report.brf)
 \tf@brf=\write6
-) [10
+) [15
 
 
 ] 
 AED: lastpage setting LastPage
-[11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
+[16]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 71.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
  (report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 68.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 71.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 71.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 36D8AE9DED133567386382E034D5042B;1033.
+(rerunfilecheck)             Checksum: 2A3E5F4DD2B0D2709CA7D495AB66BEF7;1311.
 Package rerunfilecheck Info: File `report.brf' has not changed.
 (rerunfilecheck)             Checksum: 3769DC1B3B9C4A5842B6EF296A47C16C;138.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 68.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 71.
  ) 
 Here is how much of TeX's memory you used:
- 31183 strings out of 493673
- 692157 string characters out of 3143963
+ 31220 strings out of 493673
+ 692777 string characters out of 3143963
  912265 words of memory out of 3000000
- 33872 multiletter control sequences out of 15000+200000
+ 33881 multiletter control sequences out of 15000+200000
  64756 words of font info for 91 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  57i,20n,83p,1366b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1491,9 +1509,9 @@ nts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
 helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (18 pages, 109169 bytes).
+Output written on report.pdf (24 pages, 116915 bytes).
 PDF statistics:
- 206 PDF objects out of 1000 (max. 8388607)
- 36 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 260 PDF objects out of 1000 (max. 8388607)
+ 47 named destinations out of 1000 (max. 500000)
+ 178 words of extra memory for PDF output out of 10000 (max. 10000000)
 
