@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Garner05}
 A.~R. Sandy~Garner, Patricia~Haden, ``My program is correct but it doesn't run:
@@ -9,5 +9,57 @@ A.~R. Sandy~Garner, Patricia~Haden, ``My program is correct but it doesn't run:
 S.~Xinogalos, ``Object-oriented design and programming: An investigation of
   novices' conceptions on objects and classes,'' {\em ACM Transactions on
   Computing Education}, vol.~15, no.~3, 2015.
+
+\bibitem{KoitzSlany14}
+S.~W. Koitz~Roxane, ``Empirical comparison of visual to hybrid formula
+  manipulation in educational programming languages for teenagers,'' {\em
+  Proceedings of the 5th Workshop on Evaluation and Usability of Programming
+  Languages and Tools}, pp.~21--30, 2014.
+
+\bibitem{scratchstat}
+{MIT Media lab}, ``Scratch statistics.''
+  \url{https://scratch.mit.edu/statistics/}.
+\newblock Used: 28/09/15.
+
+\bibitem{MaloneyResnick10}
+R.~N. S. B. E.~E. Maloney~John, Resnick~Mitchel, ``The scratch programming
+  language and environment,'' {\em Journal Name}, vol.~10, no.~16, 2010.
+
+\bibitem{turtle_origin}
+S.~Papert, {\em Mindstorms: Children, Computers, And Powerful Ideas}, p.~218.
+\newblock Basic Books, Inc., 1~ed., 1980.
+
+\bibitem{turtle_func}
+S.~Papert, {\em Mindstorms: Children, Computers, And Powerful Ideas},
+  pp.~11--15.
+\newblock Basic Books, Inc., 1~ed., 1980.
+
+\bibitem{alan_turtle_video}
+A.~Kay, ``Alan kay shares a powerful idea about teaching ideas.''
+  \url{https://www.youtube.com/watch?v=JDpsXWuedVc}, 2014.
+\newblock Used: 26/09/15.
+
+\bibitem{smallbasic_faq}
+Microsoft, ``Small basic faq.'' \url{http://smallbasic.com/faq.aspx}.
+\newblock Used: 26/09/15.
+
+\bibitem{smallbasic_intro}
+Microsoft, ``Microsoft small basic, an introduction to programming.''
+  \url{http://download.microsoft.com/download/9/0/6/90616372-C4BF-4628-BC82-BD709635220D/Introducing\%20Small\%20Basic.pdf}.
+\newblock Used: 26/09/15.
+
+\bibitem{smallbasic_curriculum}
+Microsoft, ``Small basic curriculum: Online.''
+  \url{http://social.technet.microsoft.com/wiki/contents/articles/16982.small-basic-curriculum-online.aspx}.
+\newblock Used: 26/09/15.
+
+\bibitem{tiobe}
+T.~Software, ``Tiobe index for october 2015.''
+  \url{http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html}.
+\newblock Used: 26/09/15.
+
+\bibitem{quorum_epiq}
+Qourum, ``Epiq 2016.'' \url{http://quorumlanguage.com/epiq.php}.
+\newblock Used: 26/09/15.
 
 \end{thebibliography}

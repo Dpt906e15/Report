@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.14)  26 OCT 2015 10:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.14)  26 OCT 2015 12:13
 entering extended mode
 **report.tex
 ("D:\Github project\Report\report.tex"
@@ -1484,69 +1484,105 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 ])
 ("D:\Github project\Report\text\analysis\text_based_programming_languages.tex"
 [8]
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 10.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 13.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ts1ptm.fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 18--21
+) [9]
+<./pics/SmallBasic.png, id=217, 686.565pt x 600.74437pt>
+File: ./pics/SmallBasic.png Graphic file (type png)
+
+<use ./pics/SmallBasic.png>
+Package pdftex.def Info: ./pics/SmallBasic.png used on input line 34.
+(pdftex.def)             Requested size: 411.94218pt x 360.4494pt.
+ [10] [11 <D:/Github project/Report/pics/SmallBasic.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 48--51
 
  []
 
-)) ("D:\Github project\Report\text\analysis\teaching.tex" [9]
+)) ("D:\Github project\Report\text\analysis\teaching.tex" [12]
 Chapter 4.
-)) [10
+)) [13
 
-] [11
+] [14
 
 ] ("D:\Github project\Report\text\comparison\comparison.tex"
 ("D:\Github project\Report\text\comparison\preliminaries.tex"
 Chapter 5.
-) ("D:\Github project\Report\text\comparison\criteria.tex" [12
+) ("D:\Github project\Report\text\comparison\criteria.tex" [15
 
 ]
 Chapter 6.
-) ("D:\Github project\Report\text\comparison\comparative_analysis.tex" [13
+) ("D:\Github project\Report\text\comparison\comparative_analysis.tex" [16
 
 ]
 Chapter 7.
-) ("D:\Github project\Report\text\comparison\results.tex" [14
+) ("D:\Github project\Report\text\comparison\results.tex" [17
 
 ]
 Chapter 8.
-)) [15
+)) [18
 
-] [16
+] [19
 
 ] ("D:\Github project\Report\report.bbl"
 ("D:\Github project\Report\report.brf")
 \tf@brf=\write6
-) [17
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+[]\T1/ptm/m/n/10.95 Microsoft, ``Mi-crosoft small ba-sic, an in-tro-duc-tion to
+ pro-gram-ming.'' []$\T1/pcr/m/n/10.95 http : / /$
+ []
 
 
-] 
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+$\T1/pcr/m/n/10.95 download . microsoft . com / download / 9 / 0 / 6 / 90616372
+ -[] C4BF -[] 4628 -[] BC82 -[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
+$\T1/pcr/m/n/10.95 com / wiki / contents / articles / 16982 . small -[] basic -
+[] curriculum -[] online .$
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 60--60
+[]\T1/ptm/m/n/10.95 T. Soft-ware, ``Tiobe in-dex for oc-to-ber 2015.'' []$\T1/p
+cr/m/n/10.95 http : / / www . tiobe . com / index . php /$
+ []
+
+[20
+
+
+]) [21] 
 AED: lastpage setting LastPage
-[18]
+[22]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 71.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
  ("D:\Github project\Report\report.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 71.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 71.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 3B107748D48A4F07137E0F562786C093;1366.
-Package rerunfilecheck Info: File `report.brf' has not changed.
-(rerunfilecheck)             Checksum: 644126F3EC97F0AB983D12DDE228F69B;187.
+(rerunfilecheck)             Checksum: 336C05E068CF7D1E2AED16A266DC4FDD;1366.
 
+
+Package rerunfilecheck Warning: File `report.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `report.brf':
+(rerunfilecheck)             Before: 66D09AC74D2DCE1424B5823D5AA687D0;828
+(rerunfilecheck)             After:  D37DB93A11BA53D0CEAA5CD4F8254743;829.
 
 LaTeX Warning: There were undefined references.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 71.
  ) 
 Here is how much of TeX's memory you used:
- 31121 strings out of 493921
- 692533 string characters out of 3147272
- 904235 words of memory out of 3000000
- 33715 multiletter control sequences out of 15000+200000
- 64756 words of font info for 91 fonts, out of 3000000 for 9000
+ 31199 strings out of 493921
+ 693802 string characters out of 3147272
+ 906235 words of memory out of 3000000
+ 33771 multiletter control sequences out of 15000+200000
+ 65377 words of font info for 93 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  57i,20n,83p,1478b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
@@ -1555,9 +1591,9 @@ nts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
 helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (26 pages, 122483 bytes).
+Output written on report.pdf (30 pages, 307048 bytes).
 PDF statistics:
- 275 PDF objects out of 1000 (max. 8388607)
- 50 named destinations out of 1000 (max. 500000)
- 186 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 349 PDF objects out of 1000 (max. 8388607)
+ 70 named destinations out of 1000 (max. 500000)
+ 191 words of extra memory for PDF output out of 10000 (max. 10000000)
 
