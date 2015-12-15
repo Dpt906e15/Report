@@ -1,6 +1,6 @@
 #lang racket
 (define fibonacci
  (lambda (n)
-   (if (= n 0) 1
-        (if (= n 1) 1
-            (+ (fibonacci (- n 1)) (fibonacci (- n 2)))))))
+   (if (or (= n 0) (= n 1))
+       1
+       (+ (fibonacci (- n 1)) (fibonacci (- n 2))))))
