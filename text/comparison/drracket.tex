@@ -104,3 +104,31 @@ The user is notified, \lstinline!hasFound! is set to 1, the letter at index \lst
 In the end the function \lstinline!guess! checks for \lstinline!hangman! being 0 to report a loss and if underscore is still a part of \lstinline!knownLetters! as otherwise a win is reported.
 
 \subsection{Criteria Evaluation}
+In this section we will discuss DrRacket in relation to our criteria. Again since we all are used to another programming paradigm these opinions might be biased.
+
+\begin{description}[style=nextline]
+\item[Readability] DrRacket is fairly readable, with the mandatory use of parentheses giving it a certain structure.
+However the lack of infix operators hurt the readability since it means that common mathematical operators like plus, minus and greater-than need to be before the two arguments breaking the common mathematical notation, which makes it harder to understand intuitively.
+The heavy use of parentheses however does mean that they sometimes can blend together making it harder to distinguish the operations from each other.
+The environment does provide an automatic highlight of the area a pair of parentheses cover when the cursor is next to one, but it does not fix the immediate readability.
+In general the functional paradigm also has some readability issues since the code usually requires a better overview of the function to understand it, where a more imperative paradigm is easier to build a partial understand from the sequence.
+\item[Writability] DrRacket has good writability, often being able to express things a little more concisely and having a consistent syntax for all sorts of function calls.
+There is good support for many levels of abstraction with functions being an integral part of the language and it offering constructs for object-oriented programming.
+Its only problems are a the higher need for overview like in readability, and that the syntax especially around missing parentheses can get hard to keep track of and often requires some debugging.
+The parentheses highlight tool does help with that quite well though.
+\item[Observability] DrRacket has good observability, as it offers an immediate console on runtime, where one can call all the functions and variables from your code and immediately see the return value.
+\item[Trialability] DrRacket has good trialability, as the code compiles quickly and easily and whenever an error is encountered it highlights the code it found the error as well as giving the error message.
+It does have the usual issues with the error message not always being helpful and sometimes reported at other places than where the actual problem is, and you still need to compile every time you want to test out any changes to the code.
+\item[Learnability] As a language is learned, there are helping and hindering factors. These are measured through learnability, which is done by measuring the cost of learning the language and its environment.
+\item[Reusability] DrRacket has great reusability with a strong focus on using functions on many levels and support for objects and classes.
+\item[Pedagogic Value] DrRacket has some great pedagogical values in the way that it encourages learning and using recursion, which is a powerful programming tool.
+Its consistency with function call conventions also help convey the ubiquitous use of function calls.
+Notably the choice of sticking to the function call syntax instead of allowing infix operators in mathematical expressions, help convey the fact that these are coded as functions in the code.
+\item[Environment] The development environment plays an important part for novices, and it should provide help for the programmer in a simple, clear and manageable way. The evaluation of the environment will be done according to how interactive systems are evaluated by David Benyon \cite[p. 225-250]{design_book}.
+I ain't got time for that!
+\item[Documentation] DrRacket has a lot of good documentation both in the form of easily accessible online tutorials and an online manual with a search function.
+There are also several books on the subject as well as a decent amount of online forum discussions on Racket and Scheme.
+\item[Uniformity] DrRacket has low uniformity relative to the other languages we know like Java, C\# and F\#.
+Its function calls has the parentheses around the whole call instead of only the parameters, and the lack of infix operators makes basic mathematical operations look vastly different.
+\item[Miscellaneous] There is a possibility that other points of interest will be discovered during the comparison. These will be described in this category.
+\end{description}
