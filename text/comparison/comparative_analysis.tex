@@ -1,8 +1,14 @@
 \chapter{Comparative Analysis}
 \label{chap:comparative_analysis}
+In this chapter a subjective comparative analysis is made of the three programming environments/languages; Scratch, BlueJ and Dr. Racket as stated in \chapref{chap:preliminaries}. The procedure used for the analysis is as follows: First, some tasks have been made which are implemented in the different environments/languages. Then each language is analyzed individually using the implementations of the tasks, where the analysis is based on the criteria presented in \chapref{chap:criteria}. Finally, the analyses are used to compare the environments/languages in \chapref{chap:results}. \todo{Depends on where we make the final comparison.}} The goal of this analysis is to get an insight into what each paradigm has to offer regarding educational programming and their environment and how they compare. \todo{We all need to agree that this is the case.}
 
-\todo{The setup for the comparison as well as the actual comparison.}
-
+The tasks are made to get as good an overview of the languages as possible. They will sometimes hypothetically favor a certain paradigm over the other, but this is done on purpose to try and find possible problems with the languages. The tasks that are implemented in each of the languages are:
+\begin{description}[style=nextline]
+\item[Task 1] This task is to create a list of a certain size, which is filled with random numbers between 0 and 19, and to create a function which adds a number to every other element in the list. The purpose of this task is to get an example of how lists are made and iterated through in the different languages, which also will give an idea of how the languages are structured in general.
+\item[Task 2] This task is to implement an algorithm which calculates numbers of the Fibonacci sequence limited by an input by a user. The purpose of this task is to see how an ``introductory'' algorithm can be implemented in each language. It is also to have a task that somewhat favors the functional paradigm, as the functional paradigm is meant to be away to express math in a programmatic way.
+\item[Task 3] This task is to create a game where a ball is hidden under a cup with 15 cups to choose from, and the goal is to locate the ball. The purpose of this task is two fold, where the first part is to show how the interactive window work in Scratch and the second part is to have a task that hypothetically favors object oriented languages, and to see how this is coped with in a non-object oriented language. Two of the three environments/languages does not support graphics as such, so there will be a difference in how this task is handled in between the languages.
+\item[Task 4] This task is to create a hangman game, where the user is supposed to guess a word with only a set amount of wrong guesses. The purpose of this task is to have a larger piece of software as the precious tasks are quite small in a sense. This will hypothetically favor Scratch and BlueJ over Dr. Racket, as the functional paradigm is not really meant for this sort of task.
+\end{description}
 \input{./text/comparison/scratch}
 \input{./text/comparison/bluej}
 \input{./text/comparison/drracket}
