@@ -60,6 +60,47 @@ The cup on that position on the list then has its \lstinline!HasBall! function c
 If it is 1 the user is congratulated and the game ends, otherwise the user is prompted to guess again and the \lstinline!AskUser! function is called to repeat the cycle.
 
 \subsection{Hangman}
+The final example is the game of hangman.
+Here we have a list of 11 words all 15 letters long represented by strings. The initial values are then defined:
+\begin{itemize}
+\item \lstinline!finalWord! is assigned a random string from our list of words and represent the word that should be guessed
+\item \lstinline!wrongLetters! represent the list of letters guessed on that were wrong and is assigned to the empty list
+\item \lstinline!knownLetters! is the list of correctly guessed letters and their position. This is initialized to a mutable string of 15 underscores.
+\item \lstinline!hangman! is the number of lives left and it is initialized to 8.
+\end{itemize}
 
+The user can guess on a letter by calling the guess function with a string.
+If the string is one char long the function \lstinline!checkLetter! is called with parameters 0 and the guess string. The function looks like this:
+
+\begin{lstlisting}
+(define (checkLetter st l)
+  (cond
+    [(> (+ st 1) (string-length finalWord))
+     (if (and (equal? hasFound 0) (not (member l wrongLetters)))
+         (loseLife l)
+         #f)]
+    [(equal? l (substring finalWord st (+ st 1)))
+     (printf "correct guess! on place ~a\n" (+ st 1))
+     (set! hasFound 1)
+     (string-set! knownLetters st (string-ref l 0))
+     (checkLetter (+ st 1) l)
+     #t]
+    [else (checkLetter (+ st 1) l)]))
+\end{lstlisting}
+
+The \lstinline!st! parameter is the index of the char in the \lstinline!finalWord! string we are looking at and \lstinline!l! is the guess string.
+This function checks for three conditions:
+
+\begin{itemize}
+\item If the index is larger than the length of the string, we are done going through the string.
+\lstinline!hasFound! is initialized in \lstinline!guess! to 0 and if it hasn't changed it means the letter was not found in \lstinline!finalWord!.
+If \lstinline!l! also was not in the \lstinline!wrongLetters! list, it means the guess was a new wrong guess and \lstinline!loseLife! is called.
+\lstinline!loseLife! reduces \lstinline!hangman! by one and adds the letter to \lstinline!wrongList!.
+\item If \lstinline!l! is equal to the substring of \lstinline!finalWord! at index \lstinline!st! then the guess is correct.
+The user is notified, \lstinline!hasFound! is set to 1, the letter at index \lstinline!st! in \lstinline!knownLetters! is changed to \lstinline!l! and the function is called recursively on the next index to go through the rest of the string.
+\item Otherwise the function is called with the next index to keep looking through the string.
+\end{itemize}
+
+In the end the function \lstinline!guess! checks for \lstinline!hangman! being 0 to report a loss and if underscore is still a part of \lstinline!knownLetters! as otherwise a win is reported.
 
 \subsection{Criteria Evaluation}
