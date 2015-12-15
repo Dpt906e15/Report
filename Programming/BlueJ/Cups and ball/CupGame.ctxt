@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ StartGame()
+comment1.params=cups
+comment1.target=void\ AskUser(java.util.List)
+numComments=2
