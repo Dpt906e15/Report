@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Words()
+comment0.text=\r\n\ Konstrukt\u00F8r\ for\ objekter\ af\ klassen\ Words\r\n
+comment1.params=guess
+comment1.target=boolean\ Guess(java.lang.String)
+comment2.params=
+comment2.target=java.util.ArrayList\ GetGuessed()
+comment3.params=
+comment3.target=java.lang.String\ GetWrong()
+comment4.params=g\ i
+comment4.target=void\ SetGuessed(java.lang.String,\ int)
+comment5.params=g
+comment5.target=void\ SetWrong(java.lang.String)
+comment6.params=
+comment6.target=java.lang.String\ GetGuessedString()
+numComments=7
