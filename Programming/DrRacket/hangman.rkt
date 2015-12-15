@@ -32,24 +32,24 @@
   (define (loseLife gu)
     (addWrong gu)
     (set! hangman (- hangman 1)))
-  (define (checkLetter st en l)
+  (define (checkLetter st l)
     (cond
-      [(> en (string-length finalWord))
+      [(> (+ st 1) (string-length finalWord))
        (if (and (equal? hasFound 0) (not (member g wrongLetters)))
            (loseLife g)
            #f)]
-      [(equal? l (substring finalWord st en))
-       (printf "correct guess! on place ~a\n" st)
+      [(equal? l (substring finalWord st (+ st 1)))
+       (printf "correct guess! on place ~a\n" (+ st 1))
        (set! hasFound 1)
        (string-set! knownLetters st (string-ref g 0))
        ;(set! knownLetters (append (firstLetters 0 st) (append (list g) (list-tail knownLetters st))))
-       (checkLetter (+ st 1) (+ en 1) l)
+       (checkLetter (+ st 1) l)
        #t]
-      [else (checkLetter (+ st 1) (+ en 1) l)]))
+      [else (checkLetter (+ st 1) l)]))
   
     
   (if (equal? (string-length g) 1)
-      (checkLetter 0 1 g)
+      (checkLetter 0 g)
       (println "Wrong input format"))
   (if (equal? hangman 0)
       (println "you are dead")
