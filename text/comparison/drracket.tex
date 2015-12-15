@@ -1,11 +1,63 @@
 \section{DrRacket}
 \label{sec:drracket}
-
-\todo{Results and discussion.}
+DrRacket is an environment used to learn to write Racket code.
+Racket is a functional programming language, and therefore DrRacket is our representative for an educational programming environment for the functional paradigm.
+Worth noting is that all of us have learned to program in an imperative paradigm first and do not have much experience working with functional languages.
+This will likely impact our code examples and opinion on the criteria evaluation.
 
 \subsection{Fibonacci}
+The first code example we will show in DrRacket is the Fibonacci implementation:
+
+\begin{lstlisting}
+(define (fibonacci n)
+  (if (or (= n 0) (= n 1))
+      1
+      (+ (fibonacci (- n 1)) (fibonacci (- n 2)))))
+\end{lstlisting}
+
+This is a simple recursive implementation of Fibonacci with no memory optimizations.
+Recursion is second nature to functional programming languages, so this is an intuitive implementation.
+The function takes in a number to find the Fibonacci number of and then calls itself recursively on the two preceding numbers to get the two numbers it needs to sum up.
+Eventually a trivial case of the called number being one or zero in which case it simply returns one.
 
 \subsection{Cups and Ball}
+The next code example is the cups and ball example.
+This example is intuitively solved in an object-oriented way and since Racket has objects and classes, we do it like that.
+We define the class like so:
+
+\begin{lstlisting}
+(define Cup%
+  (class object%
+    (define holdsBall 0)
+
+    (super-new)
+    
+    (define/public (AddBall)
+      (set! holdsBall 1)
+      )
+    
+    (define/public (HasBall)
+      holdsBall)
+))
+\end{lstlisting}
+
+Each object of the class cup has a variable \lstinline!holdsBall!, which is used to store whether this cup has a ball, were 1 means it has a ball.
+They also have two functions: \lstinline!AddBall! which sets \lstinline!holdsBall! to 1, and \lstinline!HasBall! which returns \lstinline!holdsBall!.
+The code then creates a list of 15 balls and calls \lstinline!AddBall! on one of them chosen randomly.
+The main game loop is facilitated with a recursive function \lstinline!AskUser!:
+
+\begin{lstlisting}
+(define (AskUser)
+   (define guess (read))
+  (if (= (send (list-ref cups (- guess 1)) HasBall) 1)
+      (println "Congratulation, you found it!")
+     (begin
+       (println "Miss! Try again, pick a cup between 1 and 15: ") (AskUser))))
+\end{lstlisting}
+
+Here the user is prompted for a number between 1 and 15.
+The cup on that position on the list then has its \lstinline!HasBall! function called.
+If it is 1 the user is congratulated and the game ends, otherwise the user is prompted to guess again and the \lstinline!AskUser! function is called to repeat the cycle.
 
 \subsection{Hangman}
 
