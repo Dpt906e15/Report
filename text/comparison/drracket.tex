@@ -9,7 +9,7 @@ This will likely impact our code examples and opinion on the criteria evaluation
 The first code example is the iterator example.
 Usually when one wants to apply a function through a list one would use the map function, but since that applies the function to every element in the list, and we want to apply it to every other element the code looks like this instead:
 
-\begin{lstlisting}
+\begin{lstlisting}[caption={The iterator function in DrRacket}, label={DrRacket_iterator}]
 (define (iterator inList)
   (if (< (length inList) 2)
       inList
@@ -27,7 +27,7 @@ We then construct the modified tail by modifying the head of the tail, which mod
 \subsection{Fibonacci}
 The second example is the Fibonacci implementation:
 
-\begin{lstlisting}
+\begin{lstlisting}[caption={The Fibonacci function in DrRacket}, label={DrRacket_fibonacci}]
 (define (fibonacci n)
   (if (or (= n 0) (= n 1))
       1
@@ -44,7 +44,7 @@ The next code example is the cups and ball example.
 This example is intuitively solved in an object-oriented way and since Racket has objects and classes, we do it like that.
 We define the class like so:
 
-\begin{lstlisting}
+\begin{lstlisting}[caption={The Cup class definition in DrRacket}, label={DrRacket_cup_object}]
 (define Cup%
   (class object%
     (define holdsBall 0)
@@ -65,7 +65,7 @@ They also have two functions: \lstinline!AddBall! which sets \lstinline!holdsBal
 The code then creates a list of 15 balls and calls \lstinline!AddBall! on one of them chosen randomly.
 The main game loop is facilitated with a recursive function \lstinline!AskUser!:
 
-\begin{lstlisting}
+\begin{lstlisting}[caption={The AskUser function in DrRacket}, label={DrRacket_AskUser}]
 (define (AskUser)
    (define guess (read))
   (if (= (send (list-ref cups (- guess 1)) HasBall) 1)
@@ -91,7 +91,7 @@ Here we have a list of 11 words all 15 letters long represented by strings. The 
 The user can guess on a letter by calling the guess function with a string.
 If the string is one char long the function \lstinline!checkLetter! is called with parameters 0 and the guess string. The function looks like this:
 
-\begin{lstlisting}
+\begin{lstlisting}[caption={The checkLetter function in DrRacket}, label={DrRacket_checkLetter}]
 (define (checkLetter st l)
   (cond
     [(> (+ st 1) (string-length finalWord))
@@ -129,7 +129,7 @@ In this section we will discuss DrRacket in relation to our criteria. Again sinc
 \item[Readability] DrRacket is fairly readable, with the mandatory use of parentheses giving it a certain structure.
 However the lack of infix operators hurt the readability since it means that common mathematical operators like plus, minus and greater-than need to be before the two arguments.
 This breaks the common mathematical notation, which makes it harder to understand intuitively.
-The heavy use of parentheses however does mean that they sometimes can blend together making it harder to distinguish the operations from each other.
+The heavy use of parentheses however does mean that they sometimes can blend together making it harder to distinguish the operations from each other as can be seen in \lstref{DrRacket_iterator}.
 The environment does provide an automatic highlight of the area a pair of parentheses cover when the cursor is next to one, but it does not fix the immediate readability.
 In general the functional paradigm also has some readability issues since the code usually requires a better overview of the function to understand it.
 A more imperative paradigm is easier to build up an understanding from partial understandings from the sequences.
