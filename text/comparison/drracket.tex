@@ -5,8 +5,27 @@ Racket is a functional programming language, and therefore DrRacket is our repre
 Worth noting is that all of us have learned to program in an imperative paradigm first and do not have much experience working with functional languages.
 This will likely impact our code examples and opinion on the criteria evaluation.
 
+\subsection{Iterator}
+The first code example is the iterator example.
+Usually when one wants to apply a function through a list one would use the map function, but since that applies the function to every element in the list, and we want to apply it to every other element the code looks like this instead:
+
+\begin{lstlisting}
+(define (iterator inList)
+  (if (< (length inList) 2)
+      inList
+      (cons (car inList) (cons (+ (car(cdr inList)) 20) (iterator (cdr(cdr inList)))))))
+\end{lstlisting}
+
+The function is a function that takes a list \lstinline!inLinst! in and returns a list.
+In the trivial case where the list is shorter than two, the function does not need to be applied to anything and the list is simply returned.
+Otherwise the second element in the list should be modified and the function recursively called on the remainder.
+To do this three functions are used:
+\lstinline!car! which returns the first element of the list called the head, \lstinline!cdr! which returns the list minus the first element called the tail, and \lstinline!cons! which combines a head and a tail to create the bigger list.
+Firstly we want to combine the unmodified head of the list with the modified tail to construct the new list.
+We then construct the modified tail by modifying the head of the tail, which modifies the second element in the list, and calling the function recursively on the tail of the tail to go through the rest of the list, and combining these.
+
 \subsection{Fibonacci}
-The first code example we will show in DrRacket is the Fibonacci implementation:
+The second example is the Fibonacci implementation:
 
 \begin{lstlisting}
 (define (fibonacci n)
@@ -119,13 +138,17 @@ The parentheses highlight tool does help with that quite well though.
 \item[Observability] DrRacket has good observability, as it offers an immediate console on runtime, where one can call all the functions and variables from your code and immediately see the return value.
 \item[Trialability] DrRacket has good trialability, as the code compiles quickly and easily and whenever an error is encountered it highlights the code it found the error as well as giving the error message.
 It does have the usual issues with the error message not always being helpful and sometimes reported at other places than where the actual problem is, and you still need to compile every time you want to test out any changes to the code.
-\item[Learnability] As a language is learned, there are helping and hindering factors. These are measured through learnability, which is done by measuring the cost of learning the language and its environment.
+\item[Learnability] DrRacket has good learnability with the possibility of using sublanguages to restrict the possibilities available to novice programmers, and more slowly opening up the higher level sublanguages to build towards the full language.
+It also has easily available tutorials to learn the language in this manner.
+It does however have the problem of not showing the legal constructs to a novice, which means they have to look up the documentation to find examples of how the code should look.
 \item[Reusability] DrRacket has great reusability with a strong focus on using functions on many levels and support for objects and classes.
 \item[Pedagogic Value] DrRacket has some great pedagogical values in the way that it encourages learning and using recursion, which is a powerful programming tool.
 Its consistency with function call conventions also help convey the ubiquitous use of function calls.
 Notably the choice of sticking to the function call syntax instead of allowing infix operators in mathematical expressions, help convey the fact that these are coded as functions in the code.
-\item[Environment] The development environment plays an important part for novices, and it should provide help for the programmer in a simple, clear and manageable way. The evaluation of the environment will be done according to how interactive systems are evaluated by David Benyon \cite[p. 225-250]{design_book}.
-I ain't got time for that!
+\item[Environment] DrRacket is a reasonably good environment for Racket.
+It provides easy setup of compilation to an easily accessible console to evaluate the code with.
+Its tools for highlighting the parantheses areas and and marking the definition with a line to it when hovering over a variable, both help keep track of the structure.
+The environment itself however does not provide any assistance for getting started.
 \item[Documentation] DrRacket has a lot of good documentation both in the form of easily accessible online tutorials and an online manual with a search function.
 There are also several books on the subject as well as a decent amount of online forum discussions on Racket and Scheme.
 \item[Uniformity] DrRacket has low uniformity relative to the other languages we know like Java, C\# and F\#.
