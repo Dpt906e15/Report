@@ -5,8 +5,27 @@ Racket is a functional programming language, and therefore DrRacket is our repre
 Worth noting is that all of us have learned to program in an imperative paradigm first and do not have much experience working with functional languages.
 This will likely impact our code examples and opinion on the criteria evaluation.
 
+\subsection{Iterator}
+The first code example is the iterator example.
+Usually when one wants to apply a function through a list one would use the map function, but since that applies the function to every element in the list, and we want to apply it to every other element the code looks like this instead:
+
+\begin{lstlisting}
+(define (iterator inList)
+  (if (< (length inList) 2)
+      inList
+      (cons (car inList) (cons (+ (car(cdr inList)) 20) (iterator (cdr(cdr inList)))))))
+\end{lstlisting}
+
+The function is a function that takes a list \lstinline!inLinst! in and returns a list.
+In the trivial case where the list is shorter than two, the function does not need to be applied to anything and the list is simply returned.
+Otherwise the second element in the list should be modified and the function recursively called on the remainder.
+To do this three functions are used:
+\lstinline!car! which returns the first element of the list called the head, \lstinline!cdr! which returns the list minus the first element called the tail, and \lstinline!cons! which combines a head and a tail to create the bigger list.
+Firstly we want to combine the unmodified head of the list with the modified tail to construct the new list.
+We then construct the modified tail by modifying the head of the tail, which modifies the second element in the list, and calling the function recursively on the tail of the tail to go through the rest of the list, and combining these.
+
 \subsection{Fibonacci}
-The first code example we will show in DrRacket is the Fibonacci implementation:
+The second example is the Fibonacci implementation:
 
 \begin{lstlisting}
 (define (fibonacci n)
