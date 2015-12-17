@@ -123,11 +123,12 @@ The user is notified, \lstinline!hasFound! is set to 1, the letter at index \lst
 In the end the function \lstinline!guess! checks for \lstinline!hangman! being 0 to report a loss and if underscore is still a part of \lstinline!knownLetters! as otherwise a win is reported.
 
 \subsection{Criteria Evaluation}
+\label{subsec:criteval}
 In this section we will discuss DrRacket in relation to our criteria. Again since we all are used to another programming paradigm these opinions might be biased.
 
 \begin{description}[style=nextline]
 \item[Readability] DrRacket is fairly readable, with the mandatory use of parentheses giving it a certain structure.
-However the lack of infix operators hurt the readability since it means that common mathematical operators like plus, minus and greater-than need to be before the two arguments.
+However the lack of infix operators hurts the readability since it means that common mathematical operators like plus, minus and greater-than need to be before the two arguments.
 This breaks the common mathematical notation, which makes it harder to understand intuitively.
 The heavy use of parentheses however does mean that they sometimes can blend together making it harder to distinguish the operations from each other as can be seen in \lstref{DrRacket_iterator}.
 The environment does provide an automatic highlight of the area a pair of parentheses cover when the cursor is next to one, but it does not fix the immediate readability.
