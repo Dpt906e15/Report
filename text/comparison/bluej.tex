@@ -2,13 +2,27 @@
 \label{sec:bluej}
 Since BlueJ uses Java as its underlying language, all the selected tasks will be implemented in an object-oriented manner and there might also be some similarities to their counterparts in Scratch in terms of code structure and use of constructs.
 \subsection{Iterator}
-The Iterator in BlueJ is implemented using simple iteration through a list with a certain size, specified by the user. Then a \textit{for} loop is used to add a number, in that case 20, to every other element from that list and then the result is printed. The code and the result can be seen in \figref{fig:bluej_iterator_code}. %Add description of the code here
+The Iterator in BlueJ is implemented using simple iteration through a list with a certain size, specified by the user. Then a \textit{for} loop is used to add a number, in that case 20, to every other element from that list and then the result is printed. The code and the result can be seen in \figref{fig:bluej_iterator_code2}. %Add description of the code here
 
 \begin{figure}[!h]
-  \centering
-      \includegraphics[scale=0.7]{./pics/bluej_iterator_code}
-      \caption{Output for Iterator}
-      \label{fig:bluej_iterator_code} 
+  \centering      
+    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{center}
+      \includegraphics[scale=0.7]{./pics/bluej_iterator_actual_code}
+      \caption{Code for Iterator}
+      \label{fig:bluej_iterator_code}
+    \end{center}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{center}
+      \includegraphics[scale=0.6]{./pics/bluej_iterator_code}
+      \caption{Output for Iterator.}
+      \label{fig:bluej_iterator_code2}
+    \end{center}
+    \end{subfigure}
+    \caption{Code and output for Iterator.}
+    \label{fig:bluej_iterator}
 \end{figure}
 
 \subsection{Fibonacci}
@@ -38,10 +52,24 @@ The Fibonacci sequence in BlueJ can be expressed both by using an iterative and 
 Similarly to how this game was implemented in Scratch, it gives the player the chance to guess where a ball might be among 15 identical cups, with the difference that it feels less intuitive since there is no visual feedback given but rather textual one - that the player has either successfully guessed the position of the ball or not. The code for \todo{watever chosen}, the class hierarchy and the final output can be seen in \figref{fig:bluej_ballcup_code}.
 
 \begin{figure}[!h]
-  \centering
-      \includegraphics[scale=0.7]{./pics/bluej_ballcup_code}
+  \centering      
+    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{center}
+      \includegraphics[scale=0.6]{./pics/bluej_ballcup_actual_code}
+      \caption{Code for Cups and Ball.}
+      \label{fig:bluej_ballcup_code2}
+    \end{center}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{center}
+      \includegraphics[scale=0.6]{./pics/bluej_ballcup_code}
       \caption{Output for Cups and Ball}
-      \label{fig:bluej_ballcup_code} 
+      \label{fig:bluej_ballcup_code}
+    \end{center}
+    \end{subfigure}
+    \caption{Code and output for Cups and Ball.}
+    \label{fig:bluej_ballcup}
 \end{figure}
 
 \subsection{Hangman}
