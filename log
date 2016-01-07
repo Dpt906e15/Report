@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.10.1)  7 JAN 2016 14:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.10.1)  7 JAN 2016 18:47
 entering extended mode
 **report
 (report.tex
@@ -1336,7 +1336,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {C:/Users/jais/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (Title.tex [
 2]
-<./pics/AAU_UK_STUDENTREPORT_blue_rgb.png, id=276, 230.8625pt x 151.56625pt>
+<./pics/AAU_UK_STUDENTREPORT_blue_rgb.png, id=268, 230.8625pt x 151.56625pt>
 File: ./pics/AAU_UK_STUDENTREPORT_blue_rgb.png Graphic file (type png)
 
 <use ./pics/AAU_UK_STUDENTREPORT_blue_rgb.png>
@@ -1402,17 +1402,24 @@ been already used, duplicate ignored
                    \relax 
 l.70 \end{titlepage}
                      [1 <./pics/AAU_UK_STUDENTREPORT_blue_rgb.png>])
-(text/preface.tex) [0] [1]
+(text/preface.tex [0]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 41.
- (report.toc
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 6.
- [2
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
 
-] [3])
+Underfull \hbox (badness 10000) in paragraph at lines 4--6
+
+ []
+
+) [1
+
+] [2] (report.toc
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 7.
+ [3
+
+] [4])
 \tf@toc=\write5
- [4] [5] (text/introduction.tex
+ [5] [6] (text/introduction.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
@@ -1442,93 +1449,102 @@ l.52 \part
 Chapter 2.
 [4
 
-]) (text/analysis/novice_problems.tex [5]
+] [5]) (text/analysis/novice_problems.tex [6]
 Chapter 3.
-[6
+[7
 
-] [7]) (text/analysis/programming_languages_and_tools.tex [8]
+] [8]) (text/analysis/programming_languages_and_tools.tex [9]
 Chapter 4.
-(text/analysis/text_based_programming_languages.tex [9
+(text/analysis/text_based_programming_languages.tex [10
 
-] [10] [11]
-<./pics/SmallBasic.png, id=497, 686.565pt x 600.74437pt>
+] [11] [12]
+<./pics/SmallBasic.png, id=502, 686.565pt x 600.74437pt>
 File: ./pics/SmallBasic.png Graphic file (type png)
 
 <use ./pics/SmallBasic.png>
-Package pdftex.def Info: ./pics/SmallBasic.png used on input line 42.
+Package pdftex.def Info: ./pics/SmallBasic.png used on input line 44.
 (pdftex.def)             Requested size: 411.94218pt x 360.4494pt.
- [12] [13 <./pics/SmallBasic.png>] [14]
-<./pics/drracket.png, id=530, 582.67688pt x 488.57532pt>
+ [13 <./pics/SmallBasic.png>] [14]
+<./pics/BlueJ_overview.png, id=522, 565.51276pt x 466.1415pt>
+File: ./pics/BlueJ_overview.png Graphic file (type png)
+
+<use ./pics/BlueJ_overview.png>
+Package pdftex.def Info: ./pics/BlueJ_overview.png used on input line 69.
+(pdftex.def)             Requested size: 254.47838pt x 209.76173pt.
+ [15 <./pics/BlueJ_overview.png>]
+<./pics/drracket.png, id=541, 582.67688pt x 488.57532pt>
 File: ./pics/drracket.png Graphic file (type png)
 
 <use ./pics/drracket.png>
-Package pdftex.def Info: ./pics/drracket.png used on input line 76.
+Package pdftex.def Info: ./pics/drracket.png used on input line 88.
 (pdftex.def)             Requested size: 343.77638pt x 288.25694pt.
- [15]
-<./pics/drracketchooselang.png, id=542, 580.41844pt x 478.03593pt>
+ [16]
+<./pics/drracketchooselang.png, id=553, 580.41844pt x 478.03593pt>
 File: ./pics/drracketchooselang.png Graphic file (type png)
 
 <use ./pics/drracketchooselang.png>
-Package pdftex.def Info: ./pics/drracketchooselang.png used on input line 84.
+Package pdftex.def Info: ./pics/drracketchooselang.png used on input line 96.
 (pdftex.def)             Requested size: 342.44391pt x 282.03876pt.
 )
-(text/analysis/visual_based_programming_languages.tex [16 <./pics/drracket.png>
+(text/analysis/visual_based_programming_languages.tex [17 <./pics/drracket.png>
  <./pics/drracketchooselang.png>]
-<./pics/scratch_ui.png, id=555, 451.08525pt x 301.125pt>
+<./pics/scratch_ui.png, id=565, 451.08525pt x 301.125pt>
 File: ./pics/scratch_ui.png Graphic file (type png)
 
 <use ./pics/scratch_ui.png>
 Package pdftex.def Info: ./pics/scratch_ui.png used on input line 19.
 (pdftex.def)             Requested size: 383.42427pt x 255.95744pt.
- [17]
-<./pics/Alice3D.png, id=565, 2654.91875pt x 1577.895pt>
+ [18]
+<./pics/Alice3D.png, id=578, 2654.91875pt x 1577.895pt>
 File: ./pics/Alice3D.png Graphic file (type png)
 
 <use ./pics/Alice3D.png>
-Package pdftex.def Info: ./pics/Alice3D.png used on input line 33.
+Package pdftex.def Info: ./pics/Alice3D.png used on input line 38.
 (pdftex.def)             Requested size: 371.6861pt x 220.9038pt.
- [18 <./pics/scratch_ui.png>]
-<./pics/greenfoot.png, id=576, 865.2325pt x 569.12625pt>
+ [19 <./pics/scratch_ui.png>]
+<./pics/greenfoot.png, id=589, 865.2325pt x 569.12625pt>
 File: ./pics/greenfoot.png Graphic file (type png)
 
 <use ./pics/greenfoot.png>
-Package pdftex.def Info: ./pics/greenfoot.png used on input line 42.
+Package pdftex.def Info: ./pics/greenfoot.png used on input line 52.
 (pdftex.def)             Requested size: 320.13101pt x 210.57341pt.
-) (text/analysis/comparison_text_visual.tex [19 <./pics/Alice3D.png (PNG copy)>
- <./pics/greenfoot.png (PNG copy)>]))
-(text/analysis/teaching.tex [20]
-Chapter 5.
-[21
+ [20 <./pics/Alice3D.png (PNG copy)>]
+Overfull \hbox (31.72198pt too wide) in paragraph at lines 58--58
+[][][]\T1/ptm/m/n/9 http://www.oracle.com/webfolder/technetwork/tutorials/Oracl
+eAcademy/GreenfootSelfStudyV1/images/L1S3_GreenfootIDE.png| 
+ []
 
-])) [22] [23
+) (text/analysis/comparison_text_visual.tex [21 <./pics/greenfoot.png (PNG copy
+)>])) (text/analysis/teaching.tex [22]
+Chapter 5.
+[23
+
+])) [24] [25
 
 ] (text/comparison/comparison.tex (text/comparison/criteria.tex
 Chapter 6.
-[24
-
-]) (text/comparison/language_analysis.tex [25]
-Chapter 7.
 [26
 
+]) (text/comparison/language_analysis.tex [27]
+Chapter 7.
+[28
+
 ] (text/comparison/scratch.tex
-<./pics/scratch_iter_code.jpg, id=644, 380.17032pt x 99.37125pt>
+<./pics/scratch_iter_code.jpg, id=665, 380.17032pt x 99.37125pt>
 File: ./pics/scratch_iter_code.jpg Graphic file (type jpg)
 
 <use ./pics/scratch_iter_code.jpg>
 Package pdftex.def Info: ./pics/scratch_iter_code.jpg used on input line 13.
 (pdftex.def)             Requested size: 190.08469pt x 49.6855pt.
 
-<./pics/scratch_iter_out.jpg, id=645, 216.05719pt x 270.25969pt>
+<./pics/scratch_iter_out.jpg, id=666, 216.05719pt x 270.25969pt>
 File: ./pics/scratch_iter_out.jpg Graphic file (type jpg)
 
 <use ./pics/scratch_iter_out.jpg>
 Package pdftex.def Info: ./pics/scratch_iter_out.jpg used on input line 21.
 (pdftex.def)             Requested size: 108.02832pt x 135.1295pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./pics/scratch_fibo_code.jpg, id=648, 365.86688pt x 296.60812pt>
+ [29 <./pics/scratch_iter_code.jpg> <./pics/scratch_iter_out.jpg>]
+<./pics/scratch_fibo_code.jpg, id=674, 365.86688pt x 296.60812pt>
 File: ./pics/scratch_fibo_code.jpg Graphic file (type jpg)
 
 <use ./pics/scratch_fibo_code.jpg>
@@ -1539,31 +1555,28 @@ Overfull \hbox (52.27089pt too wide) in paragraph at lines 37--38
  [] 
  []
 
-<./pics/scratch_fibo_out.jpg, id=649, 78.2925pt x 268.00125pt>
+<./pics/scratch_fibo_out.jpg, id=675, 78.2925pt x 268.00125pt>
 File: ./pics/scratch_fibo_out.jpg Graphic file (type jpg)
 
 <use ./pics/scratch_fibo_out.jpg>
 Package pdftex.def Info: ./pics/scratch_fibo_out.jpg used on input line 45.
 (pdftex.def)             Requested size: 46.97585pt x 160.80197pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[27] <./pics/scratch_ball_code1.jpg, id=659, 259.7203pt x 383.18156pt>
+<./pics/scratch_ball_code1.jpg, id=679, 259.7203pt x 383.18156pt>
 File: ./pics/scratch_ball_code1.jpg Graphic file (type jpg)
 
 <use ./pics/scratch_ball_code1.jpg>
 Package pdftex.def Info: ./pics/scratch_ball_code1.jpg used on input line 61.
 (pdftex.def)             Requested size: 181.80296pt x 268.22525pt.
 
-<./pics/scratch_ball_code2.jpg, id=660, 210.7875pt x 183.68625pt>
+<./pics/scratch_ball_code2.jpg, id=680, 210.7875pt x 183.68625pt>
 File: ./pics/scratch_ball_code2.jpg Graphic file (type jpg)
 
 <use ./pics/scratch_ball_code2.jpg>
 Package pdftex.def Info: ./pics/scratch_ball_code2.jpg used on input line 69.
 (pdftex.def)             Requested size: 147.55025pt x 128.57947pt.
 
-<./pics/scratch_ball_out.jpg, id=661, 356.0803pt x 268.75406pt>
+<./pics/scratch_ball_out.jpg, id=681, 356.0803pt x 268.75406pt>
 File: ./pics/scratch_ball_out.jpg Graphic file (type jpg)
 
 <use ./pics/scratch_ball_out.jpg>
@@ -1573,9 +1586,7 @@ Package pdftex.def Info: ./pics/scratch_ball_out.jpg used on input line 77.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[28 <./pics/scratch_iter_code.jpg> <./pics/scratch_iter_out.jpg> <./pics/scratc
-h_fibo_code.jpg> <./pics/scratch_fibo_out.jpg>]
-<./pics/scratch_hang_code.jpg, id=671, 421.575pt x 685.8122pt>
+<./pics/scratch_hang_code.jpg, id=684, 421.575pt x 685.8122pt>
 File: ./pics/scratch_hang_code.jpg Graphic file (type jpg)
 
 <use ./pics/scratch_hang_code.jpg>
@@ -1586,7 +1597,7 @@ Overfull \hbox (6.9528pt too wide) in paragraph at lines 93--94
  [] 
  []
 
-<./pics/scratch_hang_out.jpg, id=672, 359.84438pt x 269.50688pt>
+<./pics/scratch_hang_out.jpg, id=685, 359.84438pt x 269.50688pt>
 File: ./pics/scratch_hang_out.jpg Graphic file (type jpg)
 
 <use ./pics/scratch_hang_out.jpg>
@@ -1596,96 +1607,129 @@ Package pdftex.def Info: ./pics/scratch_hang_out.jpg used on input line 101.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[29 <./pics/scratch_ball_code1.jpg> <./pics/scratch_ball_code2.jpg> <./pics/scr
-atch_ball_out.jpg>] [30 <./pics/scratch_hang_code.jpg> <./pics/scratch_hang_out
-.jpg>] [31]) (text/comparison/bluej.tex
-<./pics/bluej_iterator_code.png, id=689, 455.301pt x 290.2845pt>
+[30 <./pics/scratch_fibo_code.jpg> <./pics/scratch_fibo_out.jpg>] [31 <./pics/s
+cratch_ball_code1.jpg> <./pics/scratch_ball_code2.jpg> <./pics/scratch_ball_out
+.jpg>] [32 <./pics/scratch_hang_code.jpg> <./pics/scratch_hang_out.jpg>]
+[33]) (text/comparison/bluej.tex
+<./pics/bluej_iterator_actual_code.png, id=710, 240.9pt x 435.87843pt>
+File: ./pics/bluej_iterator_actual_code.png Graphic file (type png)
+
+<use ./pics/bluej_iterator_actual_code.png>
+Package pdftex.def Info: ./pics/bluej_iterator_actual_code.png used on input li
+ne 11.
+(pdftex.def)             Requested size: 168.62883pt x 305.11282pt.
+
+<./pics/bluej_iterator_code.png, id=711, 455.301pt x 290.2845pt>
 File: ./pics/bluej_iterator_code.png Graphic file (type png)
 
 <use ./pics/bluej_iterator_code.png>
-Package pdftex.def Info: ./pics/bluej_iterator_code.png used on input line 9.
-(pdftex.def)             Requested size: 318.70853pt x 203.19775pt.
+Package pdftex.def Info: ./pics/bluej_iterator_code.png used on input line 19.
+(pdftex.def)             Requested size: 273.1827pt x 174.17203pt.
 
-<./pics/bluej_fibo_code.png, id=691, 300.52275pt x 197.538pt>
-File: ./pics/bluej_fibo_code.png Graphic file (type png)
-
-<use ./pics/bluej_fibo_code.png>
-Package pdftex.def Info: ./pics/bluej_fibo_code.png used on input line 21.
-(pdftex.def)             Requested size: 210.36447pt x 138.27565pt.
-
-Overfull \hbox (6.5303pt too wide) in paragraph at lines 21--22
+Overfull \hbox (69.34853pt too wide) in paragraph at lines 19--20
  [] 
  []
 
-<./pics/bluej_fibo_code2.png, id=692, 325.81725pt x 368.577pt>
+[34 <./pics/bluej_iterator_actual_code.png> <./pics/bluej_iterator_code.png>]
+<./pics/bluej_fibo_code.png, id=719, 300.52275pt x 197.538pt>
+File: ./pics/bluej_fibo_code.png Graphic file (type png)
+
+<use ./pics/bluej_fibo_code.png>
+Package pdftex.def Info: ./pics/bluej_fibo_code.png used on input line 35.
+(pdftex.def)             Requested size: 210.36447pt x 138.27565pt.
+
+Overfull \hbox (6.5303pt too wide) in paragraph at lines 35--36
+ [] 
+ []
+
+<./pics/bluej_fibo_code2.png, id=720, 325.81725pt x 368.577pt>
 File: ./pics/bluej_fibo_code2.png Graphic file (type png)
 
 <use ./pics/bluej_fibo_code2.png>
-Package pdftex.def Info: ./pics/bluej_fibo_code2.png used on input line 29.
+Package pdftex.def Info: ./pics/bluej_fibo_code2.png used on input line 43.
 (pdftex.def)             Requested size: 195.49184pt x 221.14789pt.
+
+<./pics/bluej_ballcup_actual_code.png, id=722, 362.85562pt x 358.33875pt>
+File: ./pics/bluej_ballcup_actual_code.png Graphic file (type png)
+
+<use ./pics/bluej_ballcup_actual_code.png>
+Package pdftex.def Info: ./pics/bluej_ballcup_actual_code.png used on input lin
+e 58.
+(pdftex.def)             Requested size: 217.71504pt x 215.0049pt.
+
+Overfull \hbox (13.88087pt too wide) in paragraph at lines 58--59
+ [] 
+ []
+
+<./pics/bluej_ballcup_code.png, id=723, 437.83575pt x 304.7385pt>
+File: ./pics/bluej_ballcup_code.png Graphic file (type png)
+
+<use ./pics/bluej_ballcup_code.png>
+Package pdftex.def Info: ./pics/bluej_ballcup_code.png used on input line 66.
+(pdftex.def)             Requested size: 262.70348pt x 182.8445pt.
+
+Overfull \hbox (58.86931pt too wide) in paragraph at lines 66--67
+ [] 
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[32 <./pics/bluej_iterator_code.png>]
-<./pics/bluej_ballcup_code.png, id=701, 437.83575pt x 304.7385pt>
-File: ./pics/bluej_ballcup_code.png Graphic file (type png)
-
-<use ./pics/bluej_ballcup_code.png>
-Package pdftex.def Info: ./pics/bluej_ballcup_code.png used on input line 42.
-(pdftex.def)             Requested size: 306.48294pt x 213.31549pt.
- [33 <./pics/bluej_fibo_code.png> <./pics/bluej_fibo_code2.png> <./pics/bluej_b
-allcup_code.png>]
-<./pics/bluej_hangman_code.png, id=709, 402.90524pt x 351.714pt>
+<./pics/bluej_hangman_code.png, id=725, 402.90524pt x 351.714pt>
 File: ./pics/bluej_hangman_code.png Graphic file (type png)
 
 <use ./pics/bluej_hangman_code.png>
-Package pdftex.def Info: ./pics/bluej_hangman_code.png used on input line 52.
+Package pdftex.def Info: ./pics/bluej_hangman_code.png used on input line 80.
 (pdftex.def)             Requested size: 282.03174pt x 246.19812pt.
- [34 <./pics/bluej_hangman_code.png>]
-[35]) (text/comparison/drracket.tex
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[35 <./pics/bluej_fibo_code.png> <./pics/bluej_fibo_code2.png>] [36 <./pics/blu
+ej_ballcup_actual_code.png> <./pics/bluej_ballcup_code.png> <./pics/bluej_hangm
+an_code.png>] [37]) (text/comparison/drracket.tex
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 12.
- [36] [37]
-Overfull \hbox (0.85326pt too wide) in paragraph at lines 114--118
+ [38] [39] [40]
+Overfull \hbox (0.85326pt too wide) in paragraph at lines 112--116
 \T1/ptm/m/n/10.95 is ini-tial-ized in [][][] to 0 and if it hasn't changed it m
 eans the let-ter was not found in [][][].
  []
 
-[38] [39])) (text/comparison/comparative_analysis.tex [40]
+[41] [42])) (text/comparison/comparative_analysis.tex [43]
 Chapter 8.
 (text/comparison/comparative_analysis/readability.tex)
-(text/comparison/comparative_analysis/writability.tex [41
+(text/comparison/comparative_analysis/writability.tex [44
 
 ])
 (text/comparison/comparative_analysis/observability.tex)
 (text/comparison/comparative_analysis/trialability.tex)
-(text/comparison/comparative_analysis/learnability.tex [42])
+(text/comparison/comparative_analysis/learnability.tex [45])
 (text/comparison/comparative_analysis/reusability.tex)
 (text/comparison/comparative_analysis/pedagogic_value.tex)
-(text/comparison/comparative_analysis/environment.tex [43])
+(text/comparison/comparative_analysis/environment.tex [46])
 (text/comparison/comparative_analysis/documentation.tex)
-(text/comparison/comparative_analysis/uniformity.tex)) [44]
-(text/comparison/results.tex [45]
+(text/comparison/comparative_analysis/uniformity.tex)) [47]
+(text/comparison/results.tex [48]
 Chapter 9.
-[46
+[49
 
-])) [47] [48
+])) [50] [51
 
 ] (text/conclusion/conclusion.tex
 Chapter 10.
-(text/conclusion/discussion.tex [49
+(text/conclusion/discussion.tex [52
 
 ]
 Chapter 11.
-[50
+[53
 
 ] (text/conclusion/coding_pirates.tex
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 1.
 
-[51])) (text/conclusion/further_works.tex [52])) [53] [54
+[54])) (text/conclusion/further_works.tex [55])) [56] [57
 
 ] (report.bbl
 (report.brf)
@@ -1696,115 +1740,115 @@ Underfull \hbox (badness 1178) in paragraph at lines 16--16
 cr/m/n/10.95 http : / / www . tiobe . com / index . php /
  []
 
-[55
+[58
 
 
 ]
-Underfull \hbox (badness 1817) in paragraph at lines 103--103
+Underfull \hbox (badness 1817) in paragraph at lines 120--120
 []\T1/ptm/m/n/10.95 Harry H. Porter III, ``Smalltalk: A white pa-per overview.'
 ' []$\T1/pcr/m/n/10.95 http : / / web . cecs . pdx .
  []
 
 
-Underfull \hbox (badness 4217) in paragraph at lines 109--109
+Underfull \hbox (badness 4217) in paragraph at lines 126--126
 []\T1/ptm/m/n/10.95 Georgi Dalakov, ``The dyn-a-book of alan kay.'' []$\T1/pcr/
 m/n/10.95 http : / / history -[] computer . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--119
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
 []\T1/ptm/m/n/10.95 Microsoft, ``Mi-crosoft small ba-sic, an in-tro-duc-tion to
  pro-gram-ming.'' []$\T1/pcr/m/n/10.95 http : / /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--119
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
 \T1/pcr/m/n/10.95 download . microsoft . com / download / 9 / 0 / 6 / 90616372 
 -[] C4BF -[] 4628 -[] BC82 -[]
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
+[59]
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 \T1/pcr/m/n/10.95 com / wiki / contents / articles / 16982 . small -[] basic -[
 ] curriculum -[] online .
  []
 
-[56]
-Underfull \hbox (badness 4846) in paragraph at lines 143--143
+
+Underfull \hbox (badness 4846) in paragraph at lines 160--160
 []\T1/ptm/m/n/10.95 B. team, ``Bluej black-box data col-lec-tion for re-searche
 rs.'' []$\T1/pcr/m/n/10.95 https : / / blackboxdc .
  []
 
 
-Underfull \hbox (badness 5954) in paragraph at lines 173--173
+Underfull \hbox (badness 5954) in paragraph at lines 190--190
 []\T1/ptm/m/n/10.95 Version2.dk, ``Pro-gram-mer-ing kom-mer til folkeskolen ude
 n plan for efterud-dan-nelse.''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
+Underfull \hbox (badness 10000) in paragraph at lines 190--190
 []$\T1/pcr/m/n/10.95 http : / / www . version2 . dk / artikel / programmering -
 [] traeder -[] ind -[] i -[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--178
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
 []\T1/ptm/m/n/10.95 Bbc.com, ``A com-put-ing rev-o-lu-tion in schools.'' []$\T1
 /pcr/m/n/10.95 http : / / www . bbc . com / news /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--190
+Underfull \hbox (badness 10000) in paragraph at lines 207--207
 []$\T1/pcr/m/n/10.95 http : / / www . theguardian . com / technology / 2014 / s
 ep / 04 / coding -[] school -[]
  []
 
 
-Underfull \hbox (badness 2368) in paragraph at lines 195--195
+Underfull \hbox (badness 2368) in paragraph at lines 212--212
 []\T1/ptm/m/n/10.95 Code.org, ``Pres-i-dent obama asks amer-ica to learn com-pu
 ter sci-ence.'' []$\T1/pcr/m/n/10.95 https : / / www .
  []
 
-[57]
-Underfull \hbox (badness 6995) in paragraph at lines 215--215
+[60]
+Underfull \hbox (badness 6995) in paragraph at lines 232--232
 []\T1/ptm/m/n/10.95 University of Wash-ing-ton, ``Eval-u-at-ing pro-gram-ming l
 an-guages.'' []$\T1/pcr/m/n/10.95 http : / / courses .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--215
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
 \T1/pcr/m/n/10.95 cs . washington . edu / courses / cse341 / 02sp / concepts / 
 evaluating -[]
  []
 
 
-Underfull \hbox (badness 6477) in paragraph at lines 223--223
+Underfull \hbox (badness 6477) in paragraph at lines 236--236
 []\T1/ptm/m/n/10.95 ``Racket doc-u-men-ta-tion.'' []$\T1/pcr/m/n/10.95 http : /
  / docs . racket -[] lang . org / index . html$[]\T1/ptm/m/n/10.95 .  Used:
  []
 
-) [58] 
+) [61] 
 AED: lastpage setting LastPage
-[59]
+[62]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
  (report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 74.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 74.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 9A5AED4062D36B6D0DAB2B80A11FF5DA;4092.
+(rerunfilecheck)             Checksum: F55A1097D6E282F9A716122C92BFD12C;3947.
 Package rerunfilecheck Info: File `report.brf' has not changed.
-(rerunfilecheck)             Checksum: 35218234249EDFF8869F8FF5F562B9EC;3340.
+(rerunfilecheck)             Checksum: 1D6AF2DE8E2E7EBB4B98F6F957D46737;3400.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 74.
  ) 
 Here is how much of TeX's memory you used:
- 32309 strings out of 493673
- 709500 string characters out of 3143963
- 933265 words of memory out of 3000000
- 34678 multiletter control sequences out of 15000+200000
+ 32354 strings out of 493673
+ 710444 string characters out of 3143963
+ 942265 words of memory out of 3000000
+ 34709 multiletter control sequences out of 15000+200000
  66455 words of font info for 94 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 57i,20n,83p,1650b,1213s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 57i,20n,83p,1650b,1922s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/font
@@ -1813,9 +1857,9 @@ vetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (68 pages, 1864969 bytes).
+Output written on report.pdf (72 pages, 1943763 bytes).
 PDF statistics:
- 1087 PDF objects out of 1200 (max. 8388607)
- 256 named destinations out of 1000 (max. 500000)
- 638 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1125 PDF objects out of 1200 (max. 8388607)
+ 267 named destinations out of 1000 (max. 500000)
+ 637 words of extra memory for PDF output out of 10000 (max. 10000000)
 
