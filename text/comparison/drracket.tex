@@ -2,12 +2,12 @@
 \label{sec:drracket}
 DrRacket is an environment used to learn to write Racket code.
 Racket is a functional programming language, and therefore DrRacket is our representative for an educational programming environment for the functional paradigm.
-Worth noting is that all of us have learned to program in an imperative paradigm first and do not have much experience working with functional languages.
-This will likely impact our code examples and opinion on the criteria evaluation.
+Worth noting is that all of of the authors have learned to program in an imperative paradigm first and do not have much experience working with functional languages.
+This will likely impact the code examples as well as the opinions in the criteria evaluation.
 
 \subsection{Iterator}
 The first code example is the iterator example.
-Usually when one wants to apply a function through a list one would use the map function, but since that applies the function to every element in the list, and we want to apply it to every other element the code looks like this instead:
+In functional programming, when one wants to apply a function through a list, one would usually use the map function. However, since that applies the function to every element in the list, and we want to apply it to every other element the code looks like shown in \lstref{DrRacket_iterator} instead.
 
 \begin{lstlisting}[caption={The iterator function in DrRacket}, label={DrRacket_iterator}]
 (define (iterator inList)
@@ -16,7 +16,7 @@ Usually when one wants to apply a function through a list one would use the map 
       (cons (car inList) (cons (+ (car(cdr inList)) 20) (iterator (cdr(cdr inList)))))))
 \end{lstlisting}
 
-The function is a function that takes a list \lstinline!inLinst! in and returns a list.
+The function takes a list \lstinline!inLinst! in and returns a list.
 In the trivial case where the list is shorter than two, the function does not need to be applied to anything and the list is simply returned.
 Otherwise the second element in the list should be modified and the function recursively called on the remainder.
 To do this three functions are used:
@@ -25,7 +25,11 @@ Firstly we want to combine the unmodified head of the list with the modified tai
 We then construct the modified tail by modifying the head of the tail, which modifies the second element in the list, and calling the function recursively on the tail of the tail to go through the rest of the list, and combining these.
 
 \subsection{Fibonacci}
-The second example is the Fibonacci implementation:
+The second example is shown in \lstref{DrRacket_fibonacci}. 
+This is a simple recursive implementation of Fibonacci with no memory optimizations.
+Recursion is second nature to functional programming languages, so this is an intuitive implementation.
+The function takes in a number to find the Fibonacci number of and then calls itself recursively on the two preceding numbers to get the two numbers it needs to sum up.
+Eventually a trivial case of the called number being one or zero in which case it simply returns one.
 
 \begin{lstlisting}[caption={The Fibonacci function in DrRacket}, label={DrRacket_fibonacci}]
 (define (fibonacci n)
@@ -34,15 +38,16 @@ The second example is the Fibonacci implementation:
       (+ (fibonacci (- n 1)) (fibonacci (- n 2)))))
 \end{lstlisting}
 
-This is a simple recursive implementation of Fibonacci with no memory optimizations.
-Recursion is second nature to functional programming languages, so this is an intuitive implementation.
-The function takes in a number to find the Fibonacci number of and then calls itself recursively on the two preceding numbers to get the two numbers it needs to sum up.
-Eventually a trivial case of the called number being one or zero in which case it simply returns one.
-
 \subsection{Cups and Ball}
 The next code example is the cups and ball example.
 This example is intuitively solved in an object-oriented way and since Racket has objects and classes, we do it like that.
-We define the class like so:
+The definition of the class \lstinline!Cup! can be seen in \lstref{DrRacket_cup_object}. Each object of the class has a variable \lstinline!holdsBall!, which is used to store whether this cup has a ball, used as a boolean.
+They also have two functions: \lstinline!AddBall! which sets \lstinline!holdsBall! to 1, and \lstinline!HasBall! which returns \lstinline!holdsBall!.
+The code then creates a list of 15 balls and calls \lstinline!AddBall! on one of them chosen randomly.
+The main game loop is facilitated with a recursive function \lstinline!AskUser!, which is shown in \lstref{DrRacket_AskUser}.
+Here the user is prompted for a number between 1 and 15.
+The cup on that position on the list then has its \lstinline!HasBall! function called.
+If it is 1 the user is congratulated and the game ends, otherwise the user is prompted to guess again and the \lstinline!AskUser! function is called to repeat the cycle.
 
 \begin{lstlisting}[caption={The Cup class definition in DrRacket}, label={DrRacket_cup_object}]
 (define Cup%
@@ -60,11 +65,6 @@ We define the class like so:
 ))
 \end{lstlisting}
 
-Each object of the class cup has a variable \lstinline!holdsBall!, which is used to store whether this cup has a ball, were 1 means it has a ball.
-They also have two functions: \lstinline!AddBall! which sets \lstinline!holdsBall! to 1, and \lstinline!HasBall! which returns \lstinline!holdsBall!.
-The code then creates a list of 15 balls and calls \lstinline!AddBall! on one of them chosen randomly.
-The main game loop is facilitated with a recursive function \lstinline!AskUser!:
-
 \begin{lstlisting}[caption={The AskUser function in DrRacket}, label={DrRacket_AskUser}]
 (define (AskUser)
    (define guess (read))
@@ -74,9 +74,7 @@ The main game loop is facilitated with a recursive function \lstinline!AskUser!:
        (println "Miss! Try again, pick a cup between 1 and 15: ") (AskUser))))
 \end{lstlisting}
 
-Here the user is prompted for a number between 1 and 15.
-The cup on that position on the list then has its \lstinline!HasBall! function called.
-If it is 1 the user is congratulated and the game ends, otherwise the user is prompted to guess again and the \lstinline!AskUser! function is called to repeat the cycle.
+
 
 \subsection{Hangman}
 The final example is the game of hangman.
@@ -89,7 +87,7 @@ Here we have a list of 11 words all 15 letters long represented by strings. The 
 \end{itemize}
 
 The user can guess on a letter by calling the guess function with a string.
-If the string is one char long the function \lstinline!checkLetter! is called with parameters 0 and the guess string. The function looks like this:
+If the string is one char long the function \lstinline!checkLetter! is called with parameters 0 and the guess string. The function can be seen in \lstref{DrRacket_checkLetter}.
 
 \begin{lstlisting}[caption={The checkLetter function in DrRacket}, label={DrRacket_checkLetter}]
 (define (checkLetter st l)
@@ -124,14 +122,14 @@ In the end the function \lstinline!guess! checks for \lstinline!hangman! being 0
 
 \subsection{Criteria Evaluation}
 \label{subsec:criteval}
-In this section we will discuss DrRacket in relation to our criteria. Again since we all are used to another programming paradigm these opinions might be biased.
+In this section we will discuss DrRacket in relation to our criteria. Again, since the authors are used to another programming paradigm, these opinions might be biased.
 
 \begin{description}[style=nextline]
 \item[Readability] DrRacket is fairly readable, with the mandatory use of parentheses giving it a certain structure.
-However the lack of infix operators hurts the readability since it means that common mathematical operators like plus, minus and greater-than need to be before the two arguments.
-This breaks the common mathematical notation, which makes it harder to understand intuitively.
 The heavy use of parentheses however does mean that they sometimes can blend together making it harder to distinguish the operations from each other as can be seen in \lstref{DrRacket_iterator}.
 The environment does provide an automatic highlight of the area a pair of parentheses cover when the cursor is next to one, but it does not fix the immediate readability.
+The lack of infix operators hurts the readability since it means that common mathematical operators like plus, minus and greater-than need to be before the two arguments.
+This breaks the common mathematical notation, which makes it harder to understand intuitively.
 In general the functional paradigm also has some readability issues since the code usually requires a better overview of the function to understand it.
 In a more imperative paradigm it is easier to build up an understanding from partial understandings of the sequences.
 \item[Writability] DrRacket has good writability, often being able to express things a little more concisely and having a consistent syntax for all sorts of function calls.
@@ -140,7 +138,7 @@ Its only problems are a the higher need for overview like in readability, and th
 The parentheses highlight tool does help with that quite well though.
 \item[Observability] DrRacket has good observability, as it offers an immediate console on runtime, where one can call all the functions and variables from your code and immediately see the return value.
 \item[Trialability] DrRacket has good trialability, as the code compiles quickly and easily and whenever an error is encountered it highlights the code it found the error as well as giving the error message.
-It does have the usual issues with the error message not always being helpful and sometimes reported at other places than where the actual problem is, and you still need to compile every time you want to test out any changes to the code.
+It does have the usual issues with the error message not always being helpful and sometimes reported at other places than where the actual problem is, and you still need to compile every time you want to test any changes to the code.
 \item[Learnability] DrRacket has good learnability with the possibility of using sublanguages to restrict the possibilities available to novice programmers.
 This allows for slowly opening up the higher level sublanguages to build towards the full language.
 It also has easily available tutorials to learn the language in this manner.

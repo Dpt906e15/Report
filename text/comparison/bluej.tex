@@ -1,8 +1,8 @@
 \section{BlueJ}
 \label{sec:bluej}
-Since BlueJ uses Java as its underlying language, all the selected tasks will be implemented in imperative, object-oriented manner and there also might be some similarities to their counterparts in Scratch in terms of code structure and use of constructs.
+Since BlueJ uses Java as its underlying language, all the selected tasks will be implemented in an object-oriented manner and there might also be some similarities to their counterparts in Scratch in terms of code structure and use of constructs.
 \subsection{Iterator}
-The Iterator in BlueJ is implemented using simple iteration through a list with a certain size, specified by the user. Then a \textit{for} loop is used to add a number,in that case 20, to every other element from that list and then the result is printed, as shown in \figref{fig:bluej_iterator_code}
+The Iterator in BlueJ is implemented using simple iteration through a list with a certain size, specified by the user. Then a \textit{for} loop is used to add a number, in that case 20, to every other element from that list and then the result is printed. The code and the result can be seen in \figref{fig:bluej_iterator_code}. %Add description of the code here
 
 \begin{figure}[!h]
   \centering
@@ -12,7 +12,7 @@ The Iterator in BlueJ is implemented using simple iteration through a list with 
 \end{figure}
 
 \subsection{Fibonacci}
-The Fibonacci sequence in BlueJ can be expressed both by using an iterative and recursive approaches. An example could be seen in \figref{fig:bluej_fibo_code2}, where the user is prompted to give a number and the respective result is shown.
+The Fibonacci sequence in BlueJ can be expressed both by using an iterative and recursive approaches. An example can be seen in \figref{fig:bluej_fibo_code2}, where the user is prompted to give a number and the respective result is shown.
 
 \begin{figure}[!h]
   \centering
@@ -35,7 +35,7 @@ The Fibonacci sequence in BlueJ can be expressed both by using an iterative and 
     \label{fig:bluej_fibo}
 \end{figure}
 \subsection{Cups and Ball}
-Similarly to how this game was implemented in Scratch, it gives the player the chance to guess where a ball might be among 15 identical cups, with the difference that it feels less intuitive since there is no visual feedback given but rather textual one - that the player has either successfully guessed the position of the ball or not. The example can be seen in \figref{fig:bluej_ballcup_code} 
+Similarly to how this game was implemented in Scratch, it gives the player the chance to guess where a ball might be among 15 identical cups, with the difference that it feels less intuitive since there is no visual feedback given but rather textual one - that the player has either successfully guessed the position of the ball or not. The code for \todo{watever chosen}, the class hierarchy and the final output can be seen in \figref{fig:bluej_ballcup_code}.
 
 \begin{figure}[!h]
   \centering
@@ -45,7 +45,7 @@ Similarly to how this game was implemented in Scratch, it gives the player the c
 \end{figure}
 
 \subsection{Hangman}
-The Hangman is also a guessing game where the player has to guess a particular word by providing one letter at the time. In BlueJ implementation, if the letter is part of the word, the its added to a guessing list, otherwise if it not, it is added to a wrong list instead. Every time the player gives a wrong letter, one of his lives is lost, thus the "total lives" the counter decrements by one, and if he is to lose all of them eventually, the game is lost and he has to start all over. The code follows an imperative style of programming with conditional statements and loops, some of which are illustrated on \figref{fig:bluej_hangman_code} 
+The Hangman is also a guessing game where the player has to guess a particular word by providing one letter at the time. In the BlueJ implementation, if the letter is part of the word, then it is added to a list of correct guesses. If not, it is added to a list of wrong guesses instead. Every time the player guesses a wrong letter, one of their lives is lost, thus the \lstinline!lives! counter decrements by one. If the player is to lose all of them eventually, the game is lost. The code follows an imperative style of programming with conditional statements and loops, some of which are shown on \figref{fig:bluej_hangman_code} 
 
 \begin{figure}[!h]
   \centering
@@ -57,15 +57,15 @@ The Hangman is also a guessing game where the player has to guess a particular w
 \subsection{Criteria Evaluation}
 \begin{description}[style=nextline]
 \item[Readability]
-BlueJ has sufficiently good readability both by its textual and visual representations. The Main panel provides an overview of the hierarchy and interactions between different classes and objects giving novice programmers a greater understanding of how different pieces of the code are connected. Additionally, the textual representation provides good indentation and different colour schemes for every method so it is easier to understand the structure of the code.
+BlueJ has reasonably good readability both by its textual and visual representations. The Main panel provides an overview of the hierarchy and interactions between different classes and objects. This gives novice programmers a greater understanding of how different pieces of the code are connected. Additionally, the textual representation provides good indentation and different colour schemes for every method so it is easier to understand the structure of the code.
 \item[Writability]
 As already mentioned in Section \ref{sec:bluej}, BlueJ uses Java as its underlying language. Writing code follows an object-oriented fashion and additionally keywords are highlighted in order to be differentiated by the programmer more easily.
 \item[Observability]
-BlueJ has fairy good observability as it usually manages to quickly and efficiently compile the code giving more time to test different scenarios since it is mainly suitable for small educational projects. Additionally, single classes can be compiled separately in order to check their correctness. BlueJ's visual representation provides the option to create instances of objects as visual elements and call different methods specific to these objects in an easy, fast and understandable way. Problematic and erroneous sections are highlighted in red with an appropriate message for specific errors.  
+BlueJ has fairly good observability as it usually manages to quickly and efficiently compile code. Additionally, single classes can be compiled separately in order to check their correctness. BlueJ's visual representation provides the option to create instances of objects as visual elements and call different methods specific to these objects in an easy, fast and understandable way. Problematic and erroneous sections are highlighted in red with an appropriate message for specific errors.  
 \item[Trialability]
-In terms of trialability, BlueJ has a good handling of syntactical and semantic errors, where the need be exceptions are thrown and the code cannot be compiled before those are fixed. When a piece of code is compiled, the screen jumps to the specific location where an error might be, if there is one, with an appropriate error message.
+In terms of trialability, BlueJ has a good handling of syntactical and semantic errors. Where need be, exceptions are thrown and the code cannot be compiled before those are fixed. When a piece of code is compiled, if there is an error, the screen jumps to the specific location for the error, with an appropriate error message.
 \item[Learnability]
-Since BlueJ is first and foremost an educational platform, it provides a good way for novice programmers to jump into the object-oriented style of programming with a steady learning curve and sufficiently good documentation.
+BlueJ is first and foremost an educational platform, and it provides an intuitive interface, with a graphical representation of classes and objects. The intuitiveness is found in the possibility of creating and manipulating these through the Main panel.
 \item[Reusability]
 BlueJ uses the established practices for reusing code from Java such as class hierarchy, polymorphism etc.
 \item[Pedagogic Value]
@@ -73,7 +73,7 @@ BlueJ is a powerful educational tool which provides a gentle introduction for no
 \item[Environment]
 Usually, the Integrated Development Environment (IDE) of a language is the only direct way of communication with that language. In the case of BlueJ, it provides the essentials needed for learning object orientation, specifically targeting novice programmers without the unnecessary clutter present in more advanced IDEs such as Eclipse or NetBeans. Furthermore, it does not require much effort to install it and create projects in it.
 \item[Documentation]
-As already mentioned, BlueJ has a solid documentation with a lot of reference materials and additional exercises for those who are interested to delve deeper in its features. Also it is fairly easy to get access to the documentation on the BlueJ homepage without the need for any additional books. Furthermore, Java's documentation is a fairly substantial place to relate to for more information.
+As already mentioned, BlueJ has a solid documentation with a lot of reference materials and additional exercises for those who are interested to delve deeper in its features. Also it is fairly easy to get access to the documentation on the BlueJ homepage without the need for any additional books. Furthermore, all of the documentation meant for Java is also applicable for BlueJ.
 \item[Uniformity]
-BlueJ has a high uniformity compared to other languages since Java is a widespread language and it uses well established language constructs. Its language constructs have mostly predictable behaviour.
+BlueJ has a high uniformity compared to other languages since Java is one of the mainstream general purpose languages, to which other languages compare their uniformity.
 \end{description}
